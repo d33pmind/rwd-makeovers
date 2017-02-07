@@ -1,0 +1,6 @@
+Chapters 01
+
+01 - https://www.flickr.com/photos/popcorncx/2165751748/in/photolist-82bfbU-dPcqJ1-82bfbm-cacNad-5JSqgf-5sS4f1-4io3xo-4dgkeH-5sMEtX-5sS515
+02 - http://bradfrost.com/wp-content/uploads/2012/03/this-will-bethe-web.png
+03 - Scaling/ratio of layout
+04 - Two column layout
