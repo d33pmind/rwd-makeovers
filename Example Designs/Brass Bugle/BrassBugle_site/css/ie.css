@@ -1,0 +1,7 @@
+*+html #footer ul li {
+	zoom:1;
+	display:inline;
+}
+.select-area .center,
+.booking-form .phone {font-style:italic;}
+*+html #footer ul li {margin-right:29px;}

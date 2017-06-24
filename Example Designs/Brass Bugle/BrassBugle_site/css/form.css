@@ -1,0 +1,118 @@
+/* custom forms styles */
+.customForm-hidden {
+	display: block !important;
+	position: absolute !important;
+	left:-9999px !important;
+}
+/* custom select styles */
+.select-area {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	height: 35px;
+}
+.select-area .select-opener {
+	background: url(../images/bg-select.gif) no-repeat 0 -70px;
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	width: 28px;
+	height: 35px;
+}
+.select-active .select-opener {background-position:0 -70px;}
+.select-area .left {
+	background: url(../images/bg-select.gif) no-repeat;
+	position: absolute;
+	width: 6px;
+	height: 35px;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	margin:0;
+}
+.select-area .center {
+	white-space: nowrap;
+	position: relative;
+	cursor: default;
+	display: block;
+	z-index: 2;
+	font:20px/25px 'ChaparralPro-Italic', serif;
+	color:#ab8745;
+	height:29px;
+	background:none;
+	margin:0 2px 0 5px;
+	padding:6px 0 0 5px;
+	background: url(../images/bg-select.gif) repeat-x 0 -35px;
+	letter-spacing:1px;
+}
+.time .select-area .center {
+	padding-left:13px;
+	text-transform:none;
+}
+.party .select-area .center {padding-left:15px;}
+.options-overflow div.drop-list {overflow: auto;}
+.options-hidden {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+.select-options {
+	z-index: 3000;
+	position: absolute;
+	top:950px;
+	margin-top:-1px;
+	padding-bottom:3px;
+}
+.select-options .drop-holder {
+	height: 1%;
+	border:1px solid #9d7d40;
+	position:relative;
+	background:#252525;
+}
+.select-options div.drop-list {width: 100%;}
+.select-options ul {
+	overflow: hidden;
+	list-style: none;
+	width: 100%;
+	padding: 2px 0;
+	margin: 0;
+}
+.select-options ul li {
+	overflow: hidden;
+	float: left;
+	width: 100%;
+}
+.select-options ul a {
+	text-decoration: none;
+	cursor: default;
+	font:18px/23px 'ChaparralPro-Italic', serif;
+	color:#ab8745;
+	display: block;
+	overflow: hidden;
+	height: 1%;
+	padding: 0 0 0 10px;
+}
+.drop-times ul a {padding-left:18px;}
+.drop-sel ul a {padding-left:21px;}
+.select-options ul a span {
+	cursor: default;
+	float: left;
+}
+.select-options .item-selected a {
+	text-decoration: none;
+	background:#ab8745;
+	color:#252525;
+}
+.select-options ul a:hover {text-decoration: none;}
+.select-options ul a:focus {outline: none;}
+.select-options .optgroup strong{
+	cursor: default;
+	display: block;
+	width: 100%;
+}
+.select-options .optgroup ul a {padding-left: 20px;}
+.select-sel-top .center {
+	text-align:left;
+	padding-left:8px;
+}
