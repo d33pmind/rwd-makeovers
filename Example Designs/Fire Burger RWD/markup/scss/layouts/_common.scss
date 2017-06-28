@@ -1,0 +1,550 @@
+h1,
+h2,
+h3 {
+	margin: 0 0 15px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+a {
+	@include animate(color);
+
+	text-decoration: none;
+}
+
+mark {
+	background: transparent;
+}
+
+/* accessibility link styles */
+.accessibility{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/* wrapper styles */
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+/* main container styles */
+.container {
+	@extend %clearfix;
+
+	max-width: 964px;
+	padding: 0 15px;
+	margin: 0 auto;
+	background: $white;
+
+	@include media('>=tablet') {
+		box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.21);
+		padding: 0 35px;
+	}
+}
+
+/* main content styles */
+#main {
+	@extend %clearfix;
+
+	padding: 10px 0 0;
+
+	@include media('>=tablet') {
+		padding: 20px 0 0;
+	}
+}
+
+.hero-section {
+	font-family: $base-font-serif;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	min-height: 180px;
+	margin: 190px -15px 25px;
+	padding: 0 15px;
+
+	@include media('>=phone') {
+		min-height: 250px;
+		background-position: 70% 0;
+	}
+
+	@include media('>=tablet') {
+		background-position: 50% 0;
+		min-height: 313px;
+		margin: 0 0 25px;
+		padding: 0;
+	}
+}
+
+.hero-block {
+	text-align: center;
+	position: relative;
+	top:-240px;
+	z-index: 0;
+
+
+	@include media('>=tablet') {
+		max-width: 415px;
+		position: static;
+	}
+}
+
+.hero-title {
+	display: block;
+	padding: 57px 0 0 0;
+	font-size: 42px;
+	line-height: 1.15;
+	margin: 0 0 27px;
+	letter-spacing: 1.3px;
+
+	@include media('>=tablet') {
+		max-height: auto;
+		padding: 57px 0 0 23px;
+		font-size: 75px;
+		line-height: 0.9;
+	}
+
+	@include media('<tablet') {
+		max-height: 153px;
+		overflow: hidden;
+	}
+
+	mark {
+		font-size: 30px;
+
+		@include media('>=tablet') {
+			font-size: 55px;
+		}
+	}
+}
+
+/* btn styles */
+.btn {
+	@include animate(background font-weight color);
+	
+	position: relative;
+	display: inline-block;
+	padding: 10px 13px 8px 12px;
+	text-transform: uppercase;
+	background: $black;
+	color: $white;
+	font: 900 12px/ 1 $base-font-sans-serif;
+	border: 2px solid $black;
+	letter-spacing: 1.2px;
+
+	@include media('>=tablet') {
+		font-size: 13px;
+	}
+
+	&:hover {
+		background: $white;
+		color: $orange;
+	}
+
+	&.btn-location {
+		padding: 15px 23px 12px 45px;
+
+		@include media('>=tablet') {
+			margin: 0 0 15px 27px;
+		}
+
+
+		&:hover {
+			background: transparent;
+			color: $black;
+		}
+	}
+
+	i {
+		position: absolute;
+		top: 5px;
+		left: 8px;
+		font-size: 28px;
+		color: $orange;
+	}
+}
+
+/* content-block styles */
+#content {
+
+	@include media('>=650px') {
+		float: left;
+		width: 65%;
+	}
+
+	@include media('>=tablet') {
+		margin: 0 0 50px;
+	}
+
+	.inner & {
+		@include media('<tablet') {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	h1 {
+		letter-spacing: 4px;
+		margin: 0 0 2px;
+
+		@include media('<tablet') {
+			font-size: 26px;
+			letter-spacing: 2px;
+		}
+	}
+
+	h2 {
+		text-transform: uppercase;
+
+		@include media('>=tablet') {
+			letter-spacing: 2.3px;
+			line-height: 1.4;
+		}
+
+		@include media('<tablet') {
+			font-size: 20px;
+		}
+	}
+
+	.col {
+		.inner & {
+
+			@include media('>=tablet') {
+				padding: 0 14px 0 0;
+			}
+		}
+
+		.title {
+			display: block;
+			font-size: 16px;
+			margin: 0 0 20px;
+			color: $orange;
+
+			@include media('>=tablet') {
+				font-size: 20px;
+				letter-spacing: 0.9px;
+				line-height: 1.35;
+				margin: 0 0 38px;
+			}
+
+			@include media('<tablet') {
+				line-height: 1.35;
+			}
+		}
+
+		.text-block {
+			letter-spacing: 0.5px;
+
+			p {
+				@include media('<tablet') {
+					margin: 0 0 10px;
+				}
+			}
+		}
+	}
+}
+
+.two-cols {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include media('>=tablet') {
+		padding: 0 3px 0 0;
+		justify-content: space-between;
+	}
+
+	.col {
+		position: relative;
+		width: 100%;
+		margin: 0 0 35px;
+
+		@include media('>=tablet') {
+			width: 47%;
+			margin: 0;
+		}
+	}
+
+	.col-title {
+		display: block;
+		text-align: center;
+		font: 20px $base-font-serif;
+		margin: 0 0 9px;
+		font-weight: 600;
+		letter-spacing: 1.6px;
+
+		@include media('>=tablet') {
+			font-size: 28px;
+		}
+	}
+
+	.img-wrap {
+		text-align: center;
+		margin: 0 0 5px;
+	}
+
+	.text-block {
+		letter-spacing: 0.5px;
+		line-height: 1.6;
+		padding: 0 0 25px;
+
+		@include media('>=650px') {
+			padding: 0 0 25px;
+		}
+
+		@include media('>=tablet') {
+			padding: 0 0 44px;
+		}
+	}
+
+	.btn-holder {
+		text-align: center;
+
+		@include media('>=tablet') {
+			@include xcenter;
+
+			width: 100%;
+			bottom: 0;
+		}
+	}
+}
+
+/* sidebar styles */
+#sidebar {
+
+	margin: 0 0 20px;
+
+	@include media('>=650px') {
+		width: 34%;
+		float: right;
+		padding: 0 0 0 27px;
+		margin: 0;
+	}
+
+	@include media('>=tablet') {
+		margin: 0 0 25px;
+	}
+
+	.inner & {
+		padding: 0;
+
+		@include media('<tablet') {
+			float: none;
+			width: 100%;
+			padding: 0;
+		}
+
+		.mail-form {
+			padding: 17px 0 0;
+		}
+	}
+
+	.form-holder {
+		padding: 15px 15px;
+
+		@include media('>=tablet') {
+			padding: 30px 16px 30px 25px;
+		}
+	}
+
+	.form-block {
+		display: block;
+		width: 100%;
+		margin: 0 0 18px;
+	}
+
+	.form-title {
+		font-size: 18px;
+		letter-spacing: 1.5px;
+		margin: 0 0 6px;
+	}
+
+	.form-info {
+		font-size: 13px;
+		line-height: 1;
+		letter-spacing: 1.2px;
+
+		@include media('>=tablet') {
+			font-size: 15px;
+		}
+	}
+
+	.input-holder {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+
+	input {
+		width: 100%;
+		margin: 0 0 18px;
+	}
+
+	.btn {
+		width: 100%;
+		margin: 0;
+		padding: 11px 21px 9px 21px;
+
+		@include media('>=phone') {
+			width: auto;
+
+		}
+	}
+}
+
+.hidden-label {
+	position: absolute;
+	left:-10000px;
+	top: 0;
+}
+
+.sidebar-block {
+	padding: 13px 10px 18px 10px;
+	background: #faac43;
+
+	@include media('>=650px') {
+		padding: 13px 20px 18px 20px;
+	}
+
+	h3 {
+		margin: 0 0 8px;
+		letter-spacing: -0.2px;
+	}
+
+	.img-wrap {
+		text-align: center;
+
+		@include media('>=650px') {
+			margin: 0 -11px 0 -47px;
+			text-align: left;
+		}	
+	}
+
+	.text-block {
+		letter-spacing: 0.5px;
+		line-height: 1.45;
+
+		p {
+			margin: 0 0 19px
+		}
+	}
+
+	.text-block-title {
+		text-transform: uppercase;
+		font-size: 14px;
+		margin: 0 0 -3px;
+		font-weight: 900;
+	}
+
+	.price {
+		display: block;
+		font-weight: 900;
+		font-size: 24px;
+		letter-spacing: 1px;
+	}
+}
+
+/* form styles */
+.mail-form {
+	width: 100%;
+
+	@include media('>=650px') {
+		float: left;
+	}
+}
+
+.form-holder {
+	padding: 15px 10px;
+	margin: 0 0 30px;
+	background: #e0e0e0;
+
+	@include media('>=650px') {
+		letter-spacing: -.4em;
+		padding: 15px 25px;
+	}
+}
+
+.form-block {
+	margin: 0 0 10px;
+
+	@include media('>=tablet') {
+		width: 40%;
+		padding: 0 10px 0 0;
+		margin: 0;
+	}
+}
+
+.form-title {
+	display: block;
+	font-weight: 900;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	line-height: 1.4;
+
+	@include media('>=650px') {
+		font-size: 18px;
+	}
+}
+
+.form-info {
+	font-size: 12px;
+	letter-spacing: 1.3px;
+
+	@include media('>=650px') {
+		font-size: 15px;
+	}
+}
+
+.input-holder {
+
+	@include media('>=tablet') {
+		width: 60%;
+		padding: 0 0 0 11px;
+	}
+
+	input {
+		width: 75%;
+		height: 34px;
+		font-size: 17px;
+		padding: 0 15px 0 15px;
+		letter-spacing: 1.2px;
+		border: 2px solid #bababa;
+		color: #bababa;
+		display: inline-block;
+		vertical-align: top;
+		// border-right: none;
+
+		@include media('>=tablet') {
+			height: 37px;
+			width: 83%;
+			padding: 0 16px 0 16px;
+		}
+	}
+
+	.btn {
+		display: inline-block;
+		vertical-align: top;
+		width: 25%;
+		margin: 0 0 0 -4px;
+		height: 34px;
+
+		@include media('>=tablet') {
+			width: 17%;
+			padding: 11px 13px 9px 12px;
+			height: 37px;
+		}
+	}
+}
+
+.form-block,
+.input-holder {
+	@include media('>=tablet') {
+		display: inline-block;
+		vertical-align: middle;
+		letter-spacing: normal;
+	}
+}
