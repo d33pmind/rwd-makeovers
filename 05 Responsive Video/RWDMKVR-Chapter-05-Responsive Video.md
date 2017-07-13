@@ -10,7 +10,8 @@ There once was a time when getting a video file onto the Internet and available 
 
 With video, similar approaches to scaling media such as `img` elements will not work. First, images, as discsused in Chapter XX are set to scale based on the width and the height adjusting as needed:
 
-```img {
+```
+img {
     min-width: 100%;
     height: auto;
 }
@@ -21,7 +22,8 @@ While images can take any size take any combination of width and height—small,
 
 Using the approach for images without aspect ratios set in place for videos, we run into the problem of videos getting clipped or squashed: 
 
-```iframe {
+```
+iframe {
     min-width: 100%;
     height: auto;
 }
@@ -39,12 +41,14 @@ First, we are going to need to get the basic HTML from a video hosting site. In 
 
 ### SCREENSHOT of YOUTUBE
 
-```<iframe width="560" height="315" src="https://www.youtube.com/embed/66mQz44pPY4" frameborder="0" allowfullscreen>
+```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/66mQz44pPY4" frameborder="0" allowfullscreen>
 ```
 
 Next, we're going to wrap a `div` element with a `class` attribute of `content-video`  to signify this class is for containing video.
 
-```<div class="content-video">
+```
+<div class="content-video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/66mQz44pPY4" frameborder="0" allowfullscreen></iframe>
 </div>
 ```
@@ -55,7 +59,8 @@ With that code in place and barring any additional CSS rules, the video should a
 
 Then to make the video flexible, pinpoint the iframe element and add width and height properties setting them to 100%: 
 
-```iframe {
+```
+iframe {
   width: 100%;
   height: 100%;
 }
@@ -63,7 +68,8 @@ Then to make the video flexible, pinpoint the iframe element and add width and h
 
 Since this code could be used for bringing in other media through the embed and object elements, let's add those generic selectors to the CSS rule:
 
-```iframe, embed, object {
+```
+iframe, embed, object {
   width: 100%;
   height: 100%;
 }
@@ -71,7 +77,8 @@ Since this code could be used for bringing in other media through the embed and 
 
 The next step is a multi-step process. The first part is to make this iframe expand to completely using absolute positioning:
 
-```iframe, embed, object {
+```
+iframe, embed, object {
   position: absolute;
   top: 0;
   left: 0;
@@ -86,7 +93,8 @@ By setting the value of the video to be absolutely positioned, the `iframe` disp
 
 To tame the video, we go up a level and work on the CSS rules for the `iframe`'s container element and set the positioning to `relative`:
 
-```.content-video {
+```
+.content-video {
   position: relative;
 }
 ```
@@ -101,7 +109,8 @@ With the iframe shackled, the next steps get us closer to bringing the video to 
 
 First, we set the height of the parent element to zero and to hide any content that would spill over by setting overflow to hidden:  
 
-```.content-video {
+```
+.content-video {
     position: relative;
     height: 0;
     overflow: hidden;
@@ -123,7 +132,8 @@ The next important step is to figure out the percentage value. And to find that 
 For a modern video of 16:9 aspect ratio, we divide 9 by 16 and get .5625 or 56.25%! That's the value for padding on the bottom:
 
 
-```.content-video {
+```
+.content-video {
     position: relative;
     padding-bottom: 56.25%; // 16:9 = .5625 = 56.25% 
     height: 0;
@@ -135,7 +145,8 @@ For a modern video of 16:9 aspect ratio, we divide 9 by 16 and get .5625 or 56.2
 
 And if we want to display content in a 4:3 aspect ratio, the math is even easier: 4 divided by 3 is .75 or 75%:
 
-```.content-video {
+```
+.content-video {
     position: relative;
     padding-bottom: 75% // 4:3 = .75 = 75%
     height: 0;
