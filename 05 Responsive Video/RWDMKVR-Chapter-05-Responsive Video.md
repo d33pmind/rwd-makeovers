@@ -166,7 +166,7 @@ If you are using jQuery already on your site, then using the FitVids plugin is a
 With a jQuery version of 1.7 or higher, you can use the easy-to-use FitVids.js to convert the width videos in your responsive web design.
 
 
-``
+```
 <script src="jquery.min.js"></script>
 <script src="jquery.fitvids.js"></script>
 <script>
@@ -175,11 +175,11 @@ With a jQuery version of 1.7 or higher, you can use the easy-to-use FitVids.js t
     $("#thing-with-videos").fitVids();
   });
 </script>
-``
+```
 
 Out of the box, FitVids.js supports YouTube and Vimeo. If you use another video provider or even serve videos yourself, there's an option to customize the video player to support them.
 
-``
+```
 <script src="jquery.min.js"></script>
 <script src="jquery.fitvids.js"></script>
 <script>
@@ -188,8 +188,7 @@ Out of the box, FitVids.js supports YouTube and Vimeo. If you use another video 
      $("#thing-with-videos").fitVids({ customSelector: "iframe[src^='http://example.com'], iframe[src^='http://videohosting.example.com']"});
   });
 </script>
-``
-
+```
 
 Note: Don't add jQuery just to add flexible videos plugin. That's more bandwidth than necessary.  
 
