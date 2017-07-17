@@ -6,7 +6,7 @@
 
 ### Welcome to the multi-device world
 
-Hey, everyone! Before WIFI and mobile devices, people used to access the Internet on their phone. Through telephone landlines on screeching modems, desktop computers were connecting to the Internet.  
+Hey, everyone! Before WiFi and mobile devices, people used to access the Internet on their phone. Through telephone landlines on screeching modems, desktop computers were connecting to the Internet.  
 
 Designing for the web used to mean designing for displays on cathode ray tube monitors that sat on desks. 
 
@@ -139,10 +139,12 @@ Media queries are a test for the browser. Media queries are written to include b
 
 If these circumstances are not met, the browser skips over the media query’s CSS rules. For example, we set a media query to set for `screen` and displaying at least at 400 pixels wide:
 
-	@media screen and (min-width: 400px) { 
+```	
+@media screen and (min-width: 400px) { 
 		// when browser is longer than 400px wide, 
 	// custom CSS rules go here 
-	}
+}
+```
 
 Since the chapter is about deconstructing legacy sites for mobile delivery, we won’t using min-width for our media queries. Instead, we use `max-width` to define the styles from going big to going small, desktop to mobile. 
 

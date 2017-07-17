@@ -2,18 +2,18 @@
 
 This table of contents Responsively Retrofitting represents the beginning of the journey: 
 
-1. Makeover: Converting Layout to Proportions
-2. Makeover: Building out a Simple Menu Navigation for Mobile
-3. Makeover: Adjusting a Multi-Tiered Navigation Menu
-4. Makeover: Working with Responsive Images
-5. Makeover: Responsive Video
-6. Makeover: Retrofitting HTML Tables
+1. Embracing the Internet’s Multi-Device World 
+2. Makeover: Working with Responsive Images
+3. Makeover: Swapping in a SVG Logo
+4. Makeover: Responsive Video
+5. Makeover: Converting Fixed Width Layout to Responsive
+6. Makeover: Adjusting a Multi-Tiered Navigation Menu
 7. Makeover: Retrofitting HTML Tables
 8. Makeover: Improving Speed & Performance
-9. Makeover: Swapping in SVG
+9. Makeover: Moving Forward with Progressiving Web Apps
 
 ## Appendices:
 
-A. Appendix: HTML5 Resources
-B. Appendix: CSS3 Resources 
-C. Appendix: RWD Resources
+* Appendix: HTML5 Resources
+* Appendix: CSS3 Resources 
+* Appendix: RWD Resources
