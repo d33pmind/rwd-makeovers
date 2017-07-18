@@ -2,6 +2,8 @@
 
 This table of contents Responsively Retrofitting represents the beginning of the journey: 
 
+i. Preface
+
 1. Embracing the Internet’s Multi-Device World 
 2. Makeover: Working with Responsive Images
 3. Makeover: Swapping in a SVG Logo
