@@ -1,14 +1,14 @@
-# Chapter 5
+# Chapter 4
 
 ## Responsive Video 
 
 “We sometimes take to record a video so that we can later see what was happening while we were busy recording a video.” ― Mokokoma Mokhonoana
 
-## The Problem with Online Video
+### The Problem with Online Video
 
 There once was a time when getting a video file onto the Internet and available for viewing on the web was a hardship. Thanks to services like YouTube, the ability to not only have our videos hosted and viewable is now trivial. 
 
-With video, similar approaches to scaling media such as `img` elements will not work. First, images, as discsused in Chapter XX are set to scale based on the width and the height adjusting as needed:
+With video, similar approaches to scaling media such as `img` elements will not work. First, images, as discsused in Chapter 2, are set to scale based on the width and the height adjusting as needed:
 
 ```
 img {
@@ -16,6 +16,9 @@ img {
     height: auto;
 }
 ```
+
+While images can take any size take any combination of width and height—small, big, tall, wide—,videos are built on standard proportional relationships. These proportions between its width and its height are called 
+*aspect ratios.*
 
 While images can take any size take any combination of width and height—small, big, tall, wide—,videos are built on standard proportional relationships. These proportions between its width and its height are called 
 *aspect ratios.*
@@ -29,7 +32,7 @@ iframe {
 }
 ```
 
-### SCREENSHOT of video issues 
+##### SCREENSHOT of video issues 
 
 Standard current aspect ratios among the current video standards are 4:3 and 16:9. When a video scales down or up, there a consistent relationship between the width and height that needs to be maintained. 
 
@@ -39,7 +42,7 @@ Note: Other mobile video standards are square or 1:1 video, which was popularize
 
 First, we are going to need to get the basic HTML from a video hosting site. In this example, we are going to pull the video from YouTube, using their embed share code: 
 
-### SCREENSHOT of YOUTUBE
+##### SCREENSHOT of YOUTUBE
 
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/66mQz44pPY4" frameborder="0" allowfullscreen>
@@ -55,7 +58,7 @@ Next, we're going to wrap a `div` element with a `class` attribute of `content-v
 
 With that code in place and barring any additional CSS rules, the video should appear pretty much as YouTube intended it to look when it appears on another site. 
 
-### SCREENSHOT of Video on percentage
+##### SCREENSHOT of Video on percentage
 
 Then to make the video flexible, pinpoint the iframe element and add width and height properties setting them to 100%: 
 
@@ -87,7 +90,7 @@ iframe, embed, object {
 }
 ```
 
-### SCREENSHOT of Video on percentage
+##### SCREENSHOT of Video on percentage
 
 By setting the value of the video to be absolutely positioned, the `iframe` display takes over the entire browser viewport. 
 
@@ -141,7 +144,7 @@ For a modern video of 16:9 aspect ratio, we divide 9 by 16 and get .5625 or 56.2
 }
 ```
 
-### SCREENSHOT of Video final source
+##### SCREENSHOT of Video final source
 
 And if we want to display content in a 4:3 aspect ratio, the math is even easier: 4 divided by 3 is .75 or 75%:
 
@@ -156,11 +159,11 @@ And if we want to display content in a 4:3 aspect ratio, the math is even easier
 
 And with that, we have two sets of CSS rules for making responsive the sometimes rigid `iframes` from YouTube. 
 
-## Working with jQuery and Videos
+### Working with jQuery and Videos
 
 If you are using jQuery already on your site, then using the FitVids plugin is an easy victory to apply a flexible media solution.
 
-### SCREENSHOT  https://github.com/davatron5000/FitVids.js
+##### SCREENSHOT  https://github.com/davatron5000/FitVids.js
 
 
 With a jQuery version of 1.7 or higher, you can use the easy-to-use FitVids.js to convert the width videos in your responsive web design.
@@ -192,10 +195,9 @@ Out of the box, FitVids.js supports YouTube and Vimeo. If you use another video 
 
 Note: Don't add jQuery just to add flexible videos plugin. That's more bandwidth than necessary.  
 
-## In Conclusion 
+### In Conclusion 
  
 While not as easy solution as images, the ability to add responsive video elements is fairly straightforward once we get pass the math. 
 
-If you are working on a legacy site or even a new site from a blank slate,  wrapping your videos in an intrinsic ratio `div` without the JavaScript dependency like jQuery is the best option. 
+If you are working on a legacy site or even a new site from a blank slate,  wrapping your videos in an intrinsic ratio `div` without the JavaScript dependency like jQuery is probably your best option.
 
-Maybe that could be automated at the CMS level WordPress short tags or something.

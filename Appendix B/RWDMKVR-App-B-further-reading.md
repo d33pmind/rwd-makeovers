@@ -13,10 +13,13 @@ To continue a deeper understanding of responsive web design, these book and podc
 * Designing With Progressive Enhancement	[https://responsivedesign.is/resources/books/designing-with-progressive-enhancement](https://responsivedesign.is/resources/books/designing-with-progressive-enhancement)
 * Designing for Performance	[https://responsivedesign.is/resources/books/designing-for-performance](https://responsivedesign.is/resources/books/designing-for-performance)
 * Using SVG with CSS3 and HTML5 [http://shop.oreilly.com/product/0636920037972.do](http://shop.oreilly.com/product/0636920037972.do)
+* Atomic Design [http://atomicdesign.bradfrost.com/](http://atomicdesign.bradfrost.com/)
+* Using SVG with CSS3 and HTML5 [http://shop.oreilly.com/product/0636920037972.do](http://shop.oreilly.com/product/0636920037972.do)
 
 ### Podcasts
 
 * Responsive Web Design Podcast	[http://responsivewebdesign.com/podcast/](http://responsivewebdesign.com/podcast/)
 * Responsive Design Podcast	[https://responsivedesign.is/podcasts](https://responsivedesign.is/podcasts)
 * Style Guide Podcast [http://styleguides.io/podcast/](http://styleguides.io/podcast/)
+* Non Breaking Space Show [http://nonbreakinb]
 

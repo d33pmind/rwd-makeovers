@@ -1,8 +1,8 @@
 # Chapter 1
+
 ## Embracing the Internet’s Multi-Device World 
 
-> “The web has moved beyond the desktop and it's not moving back.” 
-> — Ethan Marcotte 
+> “The web has moved beyond the desktop and it's not moving back.” — Ethan Marcotte 
 
 ### Welcome to the multi-device world
 

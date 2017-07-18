@@ -53,9 +53,7 @@ This appendix presents resources on a wide range of topics from strategy to tool
 	 
 #### Images
 
-* PictureFill   [https://github.com/scottjehl/picturefill](https://github.com/scottjehl/picturefill)
 * Responsive Images in Practice [http://alistapart.com/article/responsive-images-in-practice](http://alistapart.com/article/responsive-images-in-practice)
-* Which Responsive Image Technique Should You Use?  [https://css-tricks.com/which-responsive-images-solution-should-you-use/](https://css-tricks.com/which-responsive-images-solution-should-you-use/)
 * Responsive Images 101: Definitions    [https://cloudfour.com/thinks/responsive-images-101-definitions/](https://cloudfour.com/thinks/responsive-images-101-definitions/)
 * Responsive Images 101: Img Required   [https://cloudfour.com/thinks/responsive-images-101-part-2-img-required/](https://cloudfour.com/thinks/responsive-images-101-part-2-img-required/)
 * Responsive Images 101: Srcset Display Density [https://cloudfour.com/thinks/responsive-images-101-part-3-srcset-display-density/](https://cloudfour.com/thinks/responsive-images-101-part-3-srcset-display-density/)
