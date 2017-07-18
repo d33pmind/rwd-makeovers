@@ -28,3 +28,7 @@ Web sites owners need to start now building for devices that have not been inven
 
 This book might also be useful to web designers and developers wanting to know more about responsive design and how its approach can broaden a site or app's reach into more devices. 
 
+Christopher Schmitt
+Austin, TX 
+Summer 2017
+
